@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>FinSage Financial Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px auto;
+            padding: 0 40px;
+            color: #333;
+            max-width: 800px;
+        }
+
+        h1 {
+            color: #003366;
+            font-size: 28px;
+            border-bottom: 3px solid #003366;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #004c99;
+            font-size: 20px;
+            margin-top: 40px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 4px;
+        }
+
+        h3 {
+            color: #003366;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin: 16px 0;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        li strong {
+            width: 280px;
+            display: inline-block;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+            border-top: 1px solid #ccc;
+            padding-top: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>FinSage Financial Analysis Report</h1>
+
+{% if revenue_chart %}
+<h2>Top Revenue Drivers</h2>
+<img src="data:image/png;base64,{{ revenue_chart }}" alt="Top Revenue Drivers">
+{% endif %}
+
+{% if cost_chart %}
+<h2>Top Cost Drivers</h2>
+<img src="data:image/png;base64,{{ cost_chart }}" alt="Top Cost Drivers">
+{% endif %}
+
+{% if inflow_chart %}
+<h2>Major Cash Inflows</h2>
+<img src="data:image/png;base64,{{ inflow_chart }}" alt="Major Cash Inflows">
+{% endif %}
+
+{% if outflow_chart %}
+<h2>Major Cash Outflows</h2>
+<img src="data:image/png;base64,{{ outflow_chart }}" alt="Major Cash Outflows">
+{% endif %}
+
+<h2>Summary</h2>
+
+<h3>Profit & Loss Summary</h3>
+<ul>
+    <li><strong>Total Revenue:</strong> ${{ pl_summary.total_revenue or "N/A" }}</li>
+    <li><strong>Total Expenses:</strong> ${{ pl_summary.total_expenses or "N/A" }}</li>
+    <li><strong>Capital Required to Break Even:</strong> ${{ pl_summary.break_even_capital or "N/A" }}</li>
+</ul>
+
+<h3>Cash Flow Summary</h3>
+<ul>
+    <li><strong>Net Cash Flow:</strong> ${{ cf_summary.net_cash_flow or "N/A" }}</li>
+</ul>
+
+<footer>
+    <p>{{ disclaimer }}</p>
+</footer>
+
+</body>
+</html>

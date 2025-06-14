@@ -1,0 +1,17 @@
+# Byte-compiled / cache files
+__pycache__/
+*.pyc
+
+# Ignore generated PDF reports
+*.pdf
+
+# Allow Excel drafts but ignore specific temp/output ones if needed
+# Example: ignore only output_report.xlsx or temp files
+# output_report.xlsx
+# ~*.xlsx  (temporary Excel autosaves)
+
+# Optional: ignore temporary chart images
+temp_charts/
+
+# Optional: ignore temporary HTML files used in PDF generation
+temp_report.html
