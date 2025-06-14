@@ -14,10 +14,11 @@ cf_data = parse_cash_flow(cf_df)
 pl_summary = analyze_profit_and_loss(pl_data)
 cf_summary = analyze_cash_flow(cf_data)
 
-print("Profit & Loss Summary:")
-print(pl_summary)
-print("\nCash Flow Summary:")
-print(cf_summary)
+# To output summary (Used for debugging)
+# print("Profit & Loss Summary:")
+# print(pl_summary)
+# print("\nCash Flow Summary:")
+# print(cf_summary)
 
 
 # Generate PDF
