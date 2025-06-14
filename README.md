@@ -145,12 +145,3 @@ Your final PDF report includes:
 This tool was created independently by **Tejas Tagra**.
 
 For feedback, contributions, or queries, contact: [hello@tejastagra.com](mailto:hello@tejastagra.com)
-
----
-
-## Future Features
-
-* Multi-year financial comparisons
-* CSV support
-* Web-based drag-and-drop GUI
-* Smart alerts and recommendations based on financial patterns

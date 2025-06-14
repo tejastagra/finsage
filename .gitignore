@@ -15,3 +15,6 @@ temp_charts/
 
 # Optional: ignore temporary HTML files used in PDF generation
 temp_report.html
+
+# macOS system files
+.DS_Store
