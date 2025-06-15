@@ -1,6 +1,6 @@
-# FinSage: Automated Financial Report Generator
+# FinSage: Automated Financial Report Visualiser
 
-**FinSage** is a smart and simple Python tool that takes your messy Profit & Loss and Cash Flow Excel sheets and turns them into a polished, professional PDF report — complete with graphs, summaries, and insights.
+**FinSage** is a smart and simple Python tool that takes your messy Profit & Loss and Cash Flow Excel sheets and turns them into a polished, professional PDF report — complete with graphs and summaries.
 
 Created by **Tejas Tagra**.
 
